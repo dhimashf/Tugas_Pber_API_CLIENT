@@ -1,4 +1,3 @@
-// DetailActivity.java
 package com.example.testapiclient;
 
 import android.os.Bundle;
@@ -32,13 +31,14 @@ public class DetailActivity extends AppCompatActivity {
         TextView pembimbing1TextView = findViewById(R.id.textViewPembimbing1);
         TextView pembimbing2TextView = findViewById(R.id.textViewPembimbing2);
 
-        namaTextView.setText(nama);
-        nimTextView.setText(nim);
-        emailTextView.setText(email);
-        kategoriTextView.setText(kategori);
-        judulTextView.setText(judul);
-        statusTextView.setText(status);
-        pembimbing1TextView.setText(pembimbing1);
-        pembimbing2TextView.setText(pembimbing2);
+        // Set text with labels
+        nimTextView.setText(getString(R.string.nim_label) + " " + nim);
+        namaTextView.setText(getString(R.string.nama_label) + " " + nama);
+        emailTextView.setText(getString(R.string.email_label) + " " + email);
+        kategoriTextView.setText(getString(R.string.kategori_label) + " " + kategori);
+        judulTextView.setText(getString(R.string.judul_label) + " " + judul);
+        statusTextView.setText(getString(R.string.status_label) + " " + status);
+        pembimbing1TextView.setText(getString(R.string.pembimbing1_label) + " " + pembimbing1);
+        pembimbing2TextView.setText(getString(R.string.pembimbing2_label) + " " + pembimbing2);
     }
 }
